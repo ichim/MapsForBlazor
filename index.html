@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="None">
+        
+        
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <title>MapsForBlazor</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/fontawesome.min.css" rel="stylesheet">
+        <link href="css/brands.min.css" rel="stylesheet">
+        <link href="css/solid.min.css" rel="stylesheet">
+        <link href="css/v4-font-face.min.css" rel="stylesheet">
+        <link href="css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body class="homepage">
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href=".">MapsForBlazor</a>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#keywords" class="nav-link">Keywords</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#quick-start" class="nav-link">Quick Start</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#basic-configuration" class="nav-link">Basic configuration</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#map" class="nav-link">Map</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#load-parameters" class="nav-link">Load Parameters</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#points-on-the-map" class="nav-link">Points on the map</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<p><em>Maps for Blazor</em> is a library that provides components for displaying maps in Blazor applications. It supports various map providers (Esri, Leaflet) and allows developers to easily integrate interactive maps, <code>without any JavaScript settings</code>, into their Blazor projects. <code>One code, one blazor component and many technologies</code>.</p>
+<p><strong>KEYWORDS</strong>: Minimizing Invoke callers to JavaScript, <code>No JavaScript specific settings</code>, no script references, no css links. <code>One code</code>, one component <code>many technologies</code>.</p>
+<h1 id="keywords">Keywords</h1>
+<p>You can display the map in the blazor page using one of the provided technologies (Esri, Leaflet providers). Regardless of the technology provider (Esri, Leaflet), the code for implementing the map will be the same. </p>
+<table>
+<thead>
+<tr>
+<th>ArcGIS</th>
+<th>Leaflet</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img alt="ArcGIS" src="https://raw.githubusercontent.com/ichim/MapsForBlazor-nuget/main/images/quick/ArcGIS-zoomLevel.gif" /></td>
+<td><img alt="Leaflet" src="https://raw.githubusercontent.com/ichim/MapsForBlazor-nuget/main/images/quick/Leaflet-zoomLevel.gif" /></td>
+</tr>
+<tr>
+<td><code>@using static MapsForBlazor.techs.maps.ArcGIS</code></td>
+<td><code>@using static MapsForBlazor.techs.maps.Leaflet</code></td>
+</tr>
+</tbody>
+</table>
+<ol>
+<li>No JavaScript specific configurations required, no API script configurations, no CSS references, etc.</li>
+<li>One code, one component, many technologies.</li>
+<li>Optimized code through various solutions</li>
+<li>minimizing the number of calls to JavaScript;</li>
+<li>collection searches by destructuring and structuring LINQ expressions</li>
+</ol>
+<h1 id="quick-start">Quick Start</h1>
+<h2 id="basic-configuration">Basic configuration</h2>
+<p>🔵 <strong>Add the right map and technology to your project in just 3 steps:</strong></p>
+<ol>
+<li>add MapsForBlazor NuGet package:</li>
+</ol>
+<p>Using Visual Studio <em>interface</em>:</p>
+<ul>
+<li>Tools -&gt; NuGet Package Manager -&gt; Manage NuGet Packages for Solution...</li>
+</ul>
+<blockquote>
+<p>Search for "MapsForBlazor" and add the package to the project or solution.</p>
+</blockquote>
+<p>Or using Visual Studio <em>console</em>:</p>
+<ul>
+<li>
+<p>Tools -&gt; NuGet Package Manager -&gt; Package Manager Console</p>
+<p>NuGet\Install-Package MapsForBlazor</p>
+</li>
+<li>
+<p>add the MapsForBlazor namespace to the project, using the @using directive</p>
+</li>
+</ul>
+<p>To do this, add the following directives to the <strong>_Imports.razor</strong> file</p>
+<pre><code>@using MapsForBlazor
+@using static MapsForBlazor.Map
+</code></pre>
+<ol>
+<li>Configuring the Blazor page (which will host the Map control):</li>
+</ol>
+<p>The <code>@using</code> directive allows selecting the API for generating the map:</p>
+<pre><code>@using static MapsForBlazor.techs.maps.ArcGIS                   //ArcGIS
+</code></pre>
+<p>Or:</p>
+<pre><code>@using static MapsForBlazor.techs.maps.Leaflet                  //Leaflet
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>🔵 The <strong>following code is the same (identical)</strong> regardless of the namespace chosen (whether you chose <code>MapsForBlazor.techs.maps.ArcGIS</code> or whether you chose <code>MapsForBlazor.techs.maps.Leaflet</code>).</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="map">Map</h2>
+<p>Adding the map to the blazor page:</p>
+<pre><code>&lt;Map height="calc(100vh - 1rem)" width="calc(100vw - 2rem)"/&gt;
+</code></pre>
+<h2 id="load-parameters">Load Parameters</h2>
+<p>The default (loading) parameters of the map can be configured using the loadParameters parameter of the Map component.</p>
+<h3 id="blazor-page">Blazor Page</h3>
+<p>for ArcGIS:</p>
+<pre><code>@using static MapsForBlazor.techs.maps.ArcGIS //for ArcGIS Maps SDK
+&lt;Map loadParameters="@loadParameters" height="calc(100vh - 1rem)" width="calc(100vw - 2rem)"/&gt;
+</code></pre>
+<p>for Leaflet:</p>
+<pre><code>@using static MapsForBlazor.techs.maps.Leaflet //for Leaflet
+&lt;Map loadParameters="@loadParameters" height="calc(100vh - 1rem)" width="calc(100vw - 2rem)"/&gt;
+</code></pre>
+<h3 id="code-block">Code Block</h3>
+<pre><code>@code{
+   LoadParameters loadParameters = new LoadParameters()
+    {
+        location = new Location()
+        {
+            latitude = 50.870847591747186,
+            longitude = 4.257255449993001
+        },
+        zoomLevel = 10,
+        mapControls = new MapControls()                                         //the controls to be displayed on the map
+        {
+            layerList = new LayerList() { position =  Position.bottomRight },   //layer list control
+            scaleBar = new ScaleBar() {                                         //scale bar control
+                position = Position.bottomRight, 
+                unitOfScaleBar = UnitOfScaleBar.metric 
+            },
+
+        }
+    };
+}
+</code></pre>
+<h2 id="points-on-the-map">Points on the map</h2>
+<p>To optimize rendering, MapsForBlazor operates with a predefined data structure for points.</p>
+<pre><code>public class StreamPoint 
+{
+    public Guid guid { get; set; }
+    public Coordinates coordinates { get; set; } 
+    public object value { get; set; } 
+    public DateTime timestamp { get; set; }
+    public string? type { get; set; }
+}
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>🔵 This structure can be extended, using custom data structures, for the value parameter.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="data-addition-flow">Data addition flow</h3>
+<h4 id="loaded-event">Loaded event</h4>
+<p>To add points to the map it is important that the map is already initialized. The first event that is triggered after the map is initialized is <code>OnAfterMapLoaded</code>.</p>
+<p>Event initialization:</p>
+<p>🔹Blazor Page:</p>
+<pre><code>&lt;Map height="calc(100vh - 1rem)" width="calc(100vw - 2rem)" OnAfterMapLoaded="@OnAfterMapLoaded"/&gt;
+</code></pre>
+<p>🔹Code Block:</p>
+<pre><code>@code {
+        private async Task OnAfterMapLoaded(MapEventArgs args)
+        {
+
+        }
+    }
+</code></pre>
+<h4 id="adding-points">Adding points</h4>
+<p>To add points to the map, you can use the <code>Add</code> method of the Map component. This method accepts a list of <code>StreamPoint</code> objects.</p>
+<p>🔹Blazor Page:</p>
+<pre><code>&lt;Map height="calc(100vh - 1rem)" width="calc(100vw - 2rem)" OnAfterMapLoaded="@OnAfterMapLoaded"/&gt;
+</code></pre>
+<p>🔹Code Block:</p>
+<pre><code>@code {
+        private async Task OnAfterMapLoaded(MapEventArgs args)
+        {
+             await map.Geometric.Points.Add(new List&lt;StreamPoint&gt;(){});
+        }
+    }
+</code></pre>
+<h3 id="removing">Removing</h3>
+<pre><code>await  map.Geometric.Points.Remove();
+</code></pre>
+<h3 id="update">Update</h3>
+<p>You can update both the attributes and the point position (coordinates):</p>
+<pre><code>await  map.Geometric.Points.Update(new List&lt;StreamPoint&gt;(){});
+</code></pre>
+<h3 id="onclick-event">OnClick Event</h3>
+<p>The points collection provides the <code>OnClick</code> event that allows you to return the points near which the click was made on the map. The distance to search for points, from the point where the click was made, is one hundredth of the diagonal of the visible area of ​​the map.</p>
+<pre><code>    map.Geometric.Points.OnClick += async (object? sender, StreamPointEventArgs args) =&gt;
+   {
+       Console.WriteLine($"    Clicked point with count {args.points.Count()}");
+   };
+</code></pre>
+<p>Where:</p>
+<pre><code>    public class StreamPointEventArgs : EventArgs
+    {
+       public List&lt;StreamPoint&gt; points { get; set; }    //points near the point where the click was made
+       public Coordinates geoid { get; set; }           //geographical coordinates of the point where the click was made
+       public Coordinates screen { get; set; }          //screen coordinates of the point where the click was made
+    }
+</code></pre>
+<h3 id="appearance">Appearance</h3>
+<p><code>Appearance</code> is a method that allows filtering and applying properties specific to the display of points on the map. Appearance supports the SetStyle() and SetPopup() methods. <a href="https://github.com/ichim/MapsForBlazor-nuget/tree/main/StreamPoint%20Collection/Appearance">Here you can find more about Appearance().</a></p>
+<ol>
+<li><strong><a href="https://github.com/ichim/MapsForBlazor-nuget/tree/main/StreamPoint%20Collection/Appearance/SetStyle">SetStyle()</a></strong></li>
+</ol>
+<p>Changing the appearance (Style) of the point on the map can be done using the following classes (SetStyle()):
+- <strong>PointStyle</strong> -&gt; base class with which you can display predefined markers;</p>
+<pre><code>    public class PointStyle
+    {
+        public string title { get; set; } = "without title";
+        public VisibilityZoomLevels visibilityZoomLevels { get; set; } = new VisibilityZoomLevels();
+        public int radius { get; set; } = 4;
+        public string? fillColor { get; set; }
+        public string? color { get; set; }
+        public int weight { get; set; } = 1;
+        public double opacity { get; set; } = 1;
+        public double fillOpacity { get; set; } = 1;
+    }
+</code></pre>
+<p><a href="https://github.com/ichim/MapsForBlazor-nuget/tree/main/StreamPoint%20Collection/Appearance/SetStyle">SetStyle</a></p>
+<ul>
+<li><strong>DynamicPointSVG</strong> -&gt; is a class with which you can use svg elements to display the point on the map. The DynamicPointSVG class defines a set of SVG elements that are scalable with the zoom level and are only displayed in the current view.<pre><code>public class DynamicPointSVG 
+{
+    public string title { get; set; } = "without title";
+    public VisibilityZoomLevels visibilityZoomLevels { get; set; } = new VisibilityZoomLevels();
+    public string? htmlContent { get; set; }
+    public int dimension { get; set; }
+    public int scaling { get; set; } = 100;
+}
+</code></pre>
+</li>
+</ul>
+<p><a href="https://github.com/ichim/MapsForBlazor-nuget/tree/main/StreamPoint%20Collection/Appearance/SVG">Working with SVG</a> </p>
+<ul>
+<li><strong>PieChart</strong> -&gt; is a class with which you can use pie charts to display the point on the map. The PieChart class defines a set of pie chart elements that are scalable with the zoom level and are only displayed in the current view.<pre><code>public class PieChart: IChartPoint, IPieStyles
+{
+    public string title { get; set; } = "without title";
+    public VisibilityZoomLevels visibilityZoomLevels { get; set; } = new VisibilityZoomLevels();
+    public int dimension { get; set; }
+    public int scaling { get; set; } = 100;
+    public int  fontSize { get; set; } = 6;
+    public int expandedIndex { get; set; } = -1;    //slice index to be expanded, -1 means no slice is expanded
+    public PieStyle? styles { get; set; } = null;
+    public object paramOrValues { get; set; }       //values for pie chart or parameter ${parameterValues}
+    public object paramOrLabels { get; set; }       //labels for pie chart or parameter ${parameterLabels}
+    public object paramOrColors { get; set; }       //colors for pie chart or parameter ${parameterColors}
+}
+</code></pre>
+</li>
+</ul>
+<p><a href="https://github.com/ichim/MapsForBlazor-nuget/tree/main/StreamPoint%20Collection/Appearance/PieChart">PieChart</a></p>
+<p>❗ Limitations of DynamicPointSVG and PieChart:
+ When using <code>@using static MapsForBlazor.techs.maps.Leaflet</code> it will not be displayed in Layers List control.</p>
+<ol>
+<li><strong>SetPopup()</strong></li>
+</ol>
+<p>Another category of properties related to the appearance of the point on the map refers to the Popups associated with it (SetPopup()).</p>
+<pre><code>    public class Popup
+    {
+        public string content { get; set; } = "without content";
+        public string title { get; set; } = "without title";
+    }
+</code></pre>
+<p>Appearance settings can be cascaded (one after another, on the same Appearance filter):</p>
+<pre><code>   await map.Geometric.Points.Appearance(e =&gt; e.type == "A" || e.type == "B")
+    .SetStyle(new PointStyle() { radius = 14, color = "green", fillColor = "azure", weight = 4 })
+    .SetPopup(new Popup() { content = "&lt;h4 style = 'background-color:gray;color:orange'&gt;Text on popup&lt;/h4&gt;", title = "titlu"});
+</code></pre>
+<p>Other examples:</p>
+<ol>
+<li>
+<p>No filtering (the entire <code>StreamPoint</code> collection will have the same Appearance):</p>
+<p>await map.Geometric.Points.Appearance()
+    .SetStyle(new PointStyle() { radius = 14, color = "green", fillColor = "azure", weight = 4 })
+    .SetPopup(new Popup() { content = "<h4 style = 'background-color:gray;color:orange'>Text on popup</h4>", title = "titlu"});</p>
+</li>
+<li>
+<p>Contained in an Array (Contains clause):</p>
+<p>string[] types = new string[] { "A", "B" };
+   await map.Geometric.Points.Appearance(e =&gt; types.Contains(e.type))
+    .SetStyle(new PointStyle() { radius = 14, color = "green", fillColor = "azure", weight = 4 })
+    .SetPopup(new Popup() { content = "<h4 style = 'background-color:gray;color:orange'>Text on popup&lt;</h4>", title = "titlu"});</p>
+</li>
+<li>
+<p><strong>SetLabel()</strong></p>
+</li>
+</ol>
+<p>The SetLabel() method provides the ability to add text to the map. The text will be associated with a StreamPoint</p>
+<pre><code> await map.Geometric.Points.Appearance(e =&gt; e.type == "Industrial")
+.SetStyle(new DynamicPointSVG()
+{
+    dimension = 20,
+    scaling = 100,
+    htmlContent = "&lt;defs&gt;&lt;radialGradient id='grad6' cx='50%' cy='50%' r='50%' fx='50%' fy='50%'&gt;&lt;stop offset='0%' stop-color='red' /&gt;&lt;stop offset='100%' stop-color='orange' /&gt;&lt;/radialGradient&gt;&lt;/defs&gt;&lt;polygon  style='fill-opacity:0.42;stroke:red;stroke-width:2' points='20,20 40,30 50,10 60,30 80,20 70,40 90,50 70,60 80,80 60,70 50,90 40,70 20,80 30,60 10,50 30,40' fill='url(#grad6)'  /&gt;",
+    title = "Parks",
+    visibilityZoomLevels = new VisibilityZoomLevels() { minZoomLevel = 8, maxZoomLevel = 10 }
+})
+.SetLabel(new Label() { title = "Ind etichete", text = "Type: ${type}\n${value}", xyAnchor = new double[2] { 0, 0 }, font = new Font() { size = 12, family = "veranda", weight = "normal" } });
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>ᶜ⁴ˡᵘ⁷ᵘ⁵ᵘᶠˡᵉ⁷⁸ᵘⁿ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Laurentiu Ichim, Bucharest</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = ".",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="js/base.js"></script>
+        <script src="search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
+
+<!--
+MkDocs version : 1.6.1
+Build Date UTC : 2026-07-14 11:22:38.963568+00:00
+-->
