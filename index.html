@@ -289,7 +289,7 @@
         public double fillOpacity { get; set; } = 1;
     }
 </code></pre>
-<p><a href="https://github.com/ichim/MapsForBlazor-nuget/tree/main/StreamPoint%20Collection/Appearance/SetStyle">SetStyle</a></p>
+<p><a href="https://github.com/ichim/MapsForBlazor-nuget/tree/main/StreamPoint%20Collection/Appearance/SetStyle">More about SetStyle</a></p>
 <ul>
 <li><strong>DynamicPointSVG</strong> -&gt; is a class with which you can use svg elements to display the point on the map. The DynamicPointSVG class defines a set of SVG elements that are scalable with the zoom level and are only displayed in the current view.<pre><code>public class DynamicPointSVG 
 {
@@ -302,7 +302,7 @@
 </code></pre>
 </li>
 </ul>
-<p><a href="https://github.com/ichim/MapsForBlazor-nuget/tree/main/StreamPoint%20Collection/Appearance/SVG">Working with SVG</a> </p>
+<p><a href="https://github.com/ichim/MapsForBlazor-nuget/tree/main/StreamPoint%20Collection/Appearance/SVG">More about SVG</a> </p>
 <ul>
 <li><strong>PieChart</strong> -&gt; is a class with which you can use pie charts to display the point on the map. The PieChart class defines a set of pie chart elements that are scalable with the zoom level and are only displayed in the current view.<pre><code>public class PieChart: IChartPoint, IPieStyles
 {
@@ -320,8 +320,75 @@
 </code></pre>
 </li>
 </ul>
-<p><a href="https://github.com/ichim/MapsForBlazor-nuget/tree/main/StreamPoint%20Collection/Appearance/PieChart">PieChart</a></p>
-<p>❗ Limitations of DynamicPointSVG and PieChart:
+<p><a href="https://github.com/ichim/MapsForBlazor-nuget/tree/main/StreamPoint%20Collection/Appearance/PieChart">More about PieChart</a></p>
+<ul>
+<li>
+<p><strong>GaugeChart</strong> -&gt; is a class with which you can use gauge charts to display the point on the map. The GaugeChart class defines a set of gauge chart elements that are scalable with the zoom level and are only displayed in the current view.</p>
+<pre><code>  public class GaugeChart : IGaugeChart
+        {
+            public string title { get; set; } = "without title";
+            public VisibilityZoomLevels visibilityZoomLevels { get; set; } = new VisibilityZoomLevels();
+            public int dimension { get; set; } = 28;
+            public object paramOrValueStart { get; set; }
+            public object paramOrValueStop { get; set; }
+            public object paramOrValue { get; set; }
+            public string label { get; set; }
+            public string colorStart { get; set; } = "white";
+            public string colorStop { get; set; } = "white";
+            public string opacity { get; set; } = "white";
+
+            public int heightCircularCrown { get; set; } = 14;
+            public string urlIndicator { get; set; }
+            public string fontColorStart { get; set; } = "black";
+            public string fontColorMiddle { get; set; } = "black";
+            public string fontColorStop { get; set; } = "black";
+            public int fontSize { get; set; } = 6;
+            public bool turnedAround { get; set; } = false;
+        }
+</code></pre>
+</li>
+<li>
+<p><strong>DiscreteGaugeChart</strong> -&gt; is a class with which you can use gauge charts to display the point on the map. The DiscreteGaugeChart class defines a set of gauge chart elements that are scalable with the zoom level and are only displayed in the current view.</p>
+<pre><code>      public class DiscreteGaugeChart :  IDiscreteGauge
+      {
+        public int dimension { get; set; } = 28;
+        public VisibilityZoomLevels? visibilityZoomLevels { get; set; }
+        public object paramOrColors { get; set; }
+        public object paramOrPercentage { get; set; }
+        public object paramOrLabels { get; set; }
+        public object paramOrValue { get; set; }
+        public string label { get; set; }
+        public int fontSize { get; set; } = 8;
+        public int index { get; set; } = -1;
+        public int heightCircularCrown { get; set; } = 20;
+        public bool turnedAround { get; set; } = false;
+      }
+</code></pre>
+</li>
+<li>
+<p><strong>QuarterGaugeFillChart</strong> -&gt; is a class with which you can use gauge charts to display the point on the map. The QuarterGaugeFillChart class defines a set of gauge chart elements that are scalable with the zoom level and are only displayed in the current view.</p>
+<p>public class QuarterGaugeFillChart : IQuarterGaugeFill
+    {</p>
+<pre><code>    public int dimension { get; set; } = 40;
+    public VisibilityZoomLevels visibilityZoomLevels { get; set; }
+
+    public object paramOrValueStart { get; set; }
+    public object paramOrValueStop { get; set; }
+    public object paramOrValue { get; set; }
+    public object paramOrIndexQuadrant { get; set; } = 3;
+    public int heightCrownOuter { get; set; } = 8;
+    public int heightCrownInner { get; set; } = 10;
+    public string label { get; set; } = "Gauge Fill";
+    public string fillPanel { get; set; } = "yellow";
+    public double opacity { get; set; } = 0.6;
+    public int fontSize { get; set; } = 5;
+    public string fillingColor { get; set; } = "red";
+    public bool haloText { get; set; } = false;
+}
+</code></pre>
+</li>
+</ul>
+<p>❗ Limitations of DynamicPointSVG, PieChart and GaugeChart:
  When using <code>@using static MapsForBlazor.techs.maps.Leaflet</code> it will not be displayed in Layers List control.</p>
 <ol>
 <li><strong>SetPopup()</strong></li>
@@ -463,5 +530,5 @@
 
 <!--
 MkDocs version : 1.6.1
-Build Date UTC : 2026-07-14 11:28:45.820104+00:00
+Build Date UTC : 2026-07-14 11:45:58.499350+00:00
 -->
