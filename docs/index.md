@@ -1,21 +1,24 @@
-*Maps for Blazor* is a library that provides components for displaying maps in Blazor applications. It supports various map providers (Esri, Leaflet) and allows developers to easily integrate interactive maps, `without any JavaScript settings`, into their Blazor projects. `One code, one blazor component and many technologies`.
+*Maps for Blazor* is a library that provides components for displaying maps in Blazor applications. It supports various map providers (currently Esri and Leaflet) and allows developers to easily integrate interactive maps, `without any JavaScript settings`, into their Blazor projects. `One code, one blazor component and many technologies`.
 
 
 **KEYWORDS**: Minimizing Invoke callers to JavaScript, `No JavaScript specific settings`, no script references, no css links. `One code`, one component `many technologies`.
 
+| Examples | Sample Image |
+|----|----|
+| SigmaDrone | ![SigmaDrone](https://raw.githubusercontent.com/ichim/MapsForBlazor-nuget/main/images/quick/SigmaDrone-border.gif) |
 
-# Keywords
+# Core Concepts
 
-You can display the map in the blazor page using one of the provided technologies (Esri, Leaflet providers). Regardless of the technology provider (Esri, Leaflet), the code for implementing the map will be the same. 
+You can display the map in the blazor page using one of the provided technologies (currently Esri and Leaflet). Regardless of the technology provider (Esri, Leaflet), the code for implementing the map will be the same. 
 
 |ArcGIS |Leaflet |
 |----|----|
 |![ArcGIS](https://raw.githubusercontent.com/ichim/MapsForBlazor-nuget/main/images/quick/ArcGIS-zoomLevel.gif)|![Leaflet](https://raw.githubusercontent.com/ichim/MapsForBlazor-nuget/main/images/quick/Leaflet-zoomLevel.gif)|
 |`@using static MapsForBlazor.techs.maps.ArcGIS`|`@using static MapsForBlazor.techs.maps.Leaflet`|
 
-1. No JavaScript specific configurations required, no API script configurations, no CSS references, etc.
-1. One code, one component, many technologies.
-1. Optimized code through various solutions
+1. ``No JavaScript specific configurations required``, no API script configurations, no CSS references, etc.
+1. ``One code, one component, many technologies``.
+1. ``Optimized code`` through various solutions
    - minimizing the number of calls to JavaScript;
    - collection searches by destructuring and structuring LINQ expressions
 
@@ -216,9 +219,9 @@ Changing the appearance (Style) of the point on the map can be done using the fo
             public double fillOpacity { get; set; } = 1;
         }
 
-[SetStyle](https://github.com/ichim/MapsForBlazor-nuget/tree/main/StreamPoint%20Collection/Appearance/SetStyle)
+[More about SetStyle](https://github.com/ichim/MapsForBlazor-nuget/tree/main/StreamPoint%20Collection/Appearance/SetStyle)
 
-- **DynamicPointSVG** -> is a class with which you can use svg elements to display the point on the map. The DynamicPointSVG class defines a set of SVG elements that are scalable with the zoom level and are only displayed in the current view.
+- **[DynamicPointSVG](https://github.com/ichim/MapsForBlazor-nuget/tree/main/StreamPoint%20Collection/Appearance/SVG) ** -> is a class with which you can use svg elements to display the point on the map. The DynamicPointSVG class defines a set of SVG elements that are scalable with the zoom level and are only displayed in the current view.
 
         public class DynamicPointSVG 
         {
@@ -229,10 +232,10 @@ Changing the appearance (Style) of the point on the map can be done using the fo
             public int scaling { get; set; } = 100;
         }
 
-[Working with SVG](https://github.com/ichim/MapsForBlazor-nuget/tree/main/StreamPoint%20Collection/Appearance/SVG) 
+[More about SVG](https://github.com/ichim/MapsForBlazor-nuget/tree/main/StreamPoint%20Collection/Appearance/SVG) 
 
 
- - **PieChart** -> is a class with which you can use pie charts to display the point on the map. The PieChart class defines a set of pie chart elements that are scalable with the zoom level and are only displayed in the current view.
+ - **[PieChart](https://github.com/ichim/MapsForBlazor-nuget/tree/main/StreamPoint%20Collection/Appearance/PieChart)** -> is a class with which you can use pie charts to display the point on the map. The PieChart class defines a set of pie chart elements that are scalable with the zoom level and are only displayed in the current view.
        
         public class PieChart: IChartPoint, IPieStyles
         {
@@ -248,11 +251,79 @@ Changing the appearance (Style) of the point on the map can be done using the fo
             public object paramOrColors { get; set; }       //colors for pie chart or parameter ${parameterColors}
         }
 
- [PieChart](https://github.com/ichim/MapsForBlazor-nuget/tree/main/StreamPoint%20Collection/Appearance/PieChart)
+ [More about PieChart](https://github.com/ichim/MapsForBlazor-nuget/tree/main/StreamPoint%20Collection/Appearance/PieChart)
+
+
+ - **[GaugeChart](https://github.com/ichim/MapsForBlazor-nuget/tree/main/StreamPoint%20Collection/Appearance/GaugeCharts)** -> is a class with which you can use gauge charts to display the point on the map. The GaugeChart class defines a set of gauge chart elements that are scalable with the zoom level and are only displayed in the current view.
+      
+          public class GaugeChart : IGaugeChart
+                {
+                    public string title { get; set; } = "without title";
+                    public VisibilityZoomLevels visibilityZoomLevels { get; set; } = new VisibilityZoomLevels();
+                    public int dimension { get; set; } = 28;
+                    public object paramOrValueStart { get; set; }
+                    public object paramOrValueStop { get; set; }
+                    public object paramOrValue { get; set; }
+                    public string label { get; set; }
+                    public string colorStart { get; set; } = "white";
+                    public string colorStop { get; set; } = "white";
+                    public string opacity { get; set; } = "white";
+
+                    public int heightCircularCrown { get; set; } = 14;
+                    public string urlIndicator { get; set; }
+                    public string fontColorStart { get; set; } = "black";
+                    public string fontColorMiddle { get; set; } = "black";
+                    public string fontColorStop { get; set; } = "black";
+                    public int fontSize { get; set; } = 6;
+                    public bool turnedAround { get; set; } = false;
+                }
+ [More about GaugeChart](https://github.com/ichim/MapsForBlazor-nuget/tree/main/StreamPoint%20Collection/Appearance/GaugeCharts)
+
+ - **[DiscreteGaugeChart](https://github.com/ichim/MapsForBlazor-nuget/tree/main/StreamPoint%20Collection/Appearance/GaugeCharts/DiscreteGaugeChart)** -> is a class with which you can use gauge charts to display the point on the map. The DiscreteGaugeChart class defines a set of gauge chart elements that are scalable with the zoom level and are only displayed in the current view.
+
+              public class DiscreteGaugeChart :  IDiscreteGauge
+              {
+                public int dimension { get; set; } = 28;
+                public VisibilityZoomLevels? visibilityZoomLevels { get; set; }
+                public object paramOrColors { get; set; }
+                public object paramOrPercentage { get; set; }
+                public object paramOrLabels { get; set; }
+                public object paramOrValue { get; set; }
+                public string label { get; set; }
+                public int fontSize { get; set; } = 8;
+                public int index { get; set; } = -1;
+                public int heightCircularCrown { get; set; } = 20;
+                public bool turnedAround { get; set; } = false;
+              }
+
+ [More about DiscreteGaugeChart](https://github.com/ichim/MapsForBlazor-nuget/tree/main/StreamPoint%20Collection/Appearance/GaugeCharts/DiscreteGaugeChart)
+  
+  - **QuarterGaugeFillChart** -> is a class with which you can use gauge charts to display the point on the map. The QuarterGaugeFillChart class defines a set of gauge chart elements that are scalable with the zoom level and are only displayed in the current view.
+
+     public class QuarterGaugeFillChart : IQuarterGaugeFill
+        {
+       
+            public int dimension { get; set; } = 40;
+            public VisibilityZoomLevels visibilityZoomLevels { get; set; }
+            
+            public object paramOrValueStart { get; set; }
+            public object paramOrValueStop { get; set; }
+            public object paramOrValue { get; set; }
+            public object paramOrIndexQuadrant { get; set; } = 3;
+            public int heightCrownOuter { get; set; } = 8;
+            public int heightCrownInner { get; set; } = 10;
+            public string label { get; set; } = "Gauge Fill";
+            public string fillPanel { get; set; } = "yellow";
+            public double opacity { get; set; } = 0.6;
+            public int fontSize { get; set; } = 5;
+            public string fillingColor { get; set; } = "red";
+            public bool haloText { get; set; } = false;
+        }
  
-❗ Limitations of DynamicPointSVG and PieChart:
+❗ Limitations of DynamicPointSVG, PieChart, GaugeChart and QuarterGaugeFillChart:
  When using `@using static MapsForBlazor.techs.maps.Leaflet` it will not be displayed in Layers List control.
 
+ 
 
 2. **SetPopup()**
 

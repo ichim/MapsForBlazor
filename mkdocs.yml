@@ -1,5 +1,12 @@
 site_name: MapsForBlazor
 theme:
   name: mkdocs
+  language: ro
+  logo: assets/CAL.png          # ← iconul care va apărea lângă site_name
+  favicon: assets/CAL.png       # ← iconul din tab-ul browserului (opțional)
+plugins:
+  - search
+extra:
+  favicon: assets/CAL.png     # ← calea către imagine
 nav:
   - Acasă: index.md
