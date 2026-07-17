@@ -53,7 +53,7 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-bs-level="1"><a href="#keywords" class="nav-link">Keywords</a>
+            <li class="nav-item" data-bs-level="1"><a href="#core-concepts" class="nav-link">Core Concepts</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -83,10 +83,24 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<p><em>Maps for Blazor</em> is a library that provides components for displaying maps in Blazor applications. It supports various map providers (Esri, Leaflet) and allows developers to easily integrate interactive maps, <code>without any JavaScript settings</code>, into their Blazor projects. <code>One code, one blazor component and many technologies</code>.</p>
+<p><em>Maps for Blazor</em> is a library that provides components for displaying maps in Blazor applications. It supports various map providers (currently Esri and Leaflet) and allows developers to easily integrate interactive maps, <code>without any JavaScript settings</code>, into their Blazor projects. <code>One code, one blazor component and many technologies</code>.</p>
 <p><strong>KEYWORDS</strong>: Minimizing Invoke callers to JavaScript, <code>No JavaScript specific settings</code>, no script references, no css links. <code>One code</code>, one component <code>many technologies</code>.</p>
-<h1 id="keywords">Keywords</h1>
-<p>You can display the map in the blazor page using one of the provided technologies (Esri, Leaflet providers). Regardless of the technology provider (Esri, Leaflet), the code for implementing the map will be the same. </p>
+<table>
+<thead>
+<tr>
+<th>Examples</th>
+<th>Sample Image</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SigmaDrone</td>
+<td><img alt="SigmaDrone" src="https://raw.githubusercontent.com/ichim/MapsForBlazor-nuget/main/images/quick/SigmaDrone-border.gif" /></td>
+</tr>
+</tbody>
+</table>
+<h1 id="core-concepts">Core Concepts</h1>
+<p>You can display the map in the blazor page using one of the provided technologies (currently Esri and Leaflet). Regardless of the technology provider (Esri, Leaflet), the code for implementing the map will be the same. </p>
 <table>
 <thead>
 <tr>
@@ -106,9 +120,9 @@
 </tbody>
 </table>
 <ol>
-<li>No JavaScript specific configurations required, no API script configurations, no CSS references, etc.</li>
-<li>One code, one component, many technologies.</li>
-<li>Optimized code through various solutions</li>
+<li><code>No JavaScript specific configurations required</code>, no API script configurations, no CSS references, etc.</li>
+<li><code>One code, one component, many technologies</code>.</li>
+<li><code>Optimized code</code> through various solutions</li>
 <li>minimizing the number of calls to JavaScript;</li>
 <li>collection searches by destructuring and structuring LINQ expressions</li>
 </ol>
@@ -291,7 +305,7 @@
 </code></pre>
 <p><a href="https://github.com/ichim/MapsForBlazor-nuget/tree/main/StreamPoint%20Collection/Appearance/SetStyle">More about SetStyle</a></p>
 <ul>
-<li><strong>DynamicPointSVG</strong> -&gt; is a class with which you can use svg elements to display the point on the map. The DynamicPointSVG class defines a set of SVG elements that are scalable with the zoom level and are only displayed in the current view.<pre><code>public class DynamicPointSVG 
+<li>**<a href="https://github.com/ichim/MapsForBlazor-nuget/tree/main/StreamPoint%20Collection/Appearance/SVG">DynamicPointSVG</a> ** -&gt; is a class with which you can use svg elements to display the point on the map. The DynamicPointSVG class defines a set of SVG elements that are scalable with the zoom level and are only displayed in the current view.<pre><code>public class DynamicPointSVG 
 {
     public string title { get; set; } = "without title";
     public VisibilityZoomLevels visibilityZoomLevels { get; set; } = new VisibilityZoomLevels();
@@ -304,7 +318,7 @@
 </ul>
 <p><a href="https://github.com/ichim/MapsForBlazor-nuget/tree/main/StreamPoint%20Collection/Appearance/SVG">More about SVG</a> </p>
 <ul>
-<li><strong>PieChart</strong> -&gt; is a class with which you can use pie charts to display the point on the map. The PieChart class defines a set of pie chart elements that are scalable with the zoom level and are only displayed in the current view.<pre><code>public class PieChart: IChartPoint, IPieStyles
+<li><strong><a href="https://github.com/ichim/MapsForBlazor-nuget/tree/main/StreamPoint%20Collection/Appearance/PieChart">PieChart</a></strong> -&gt; is a class with which you can use pie charts to display the point on the map. The PieChart class defines a set of pie chart elements that are scalable with the zoom level and are only displayed in the current view.<pre><code>public class PieChart: IChartPoint, IPieStyles
 {
     public string title { get; set; } = "without title";
     public VisibilityZoomLevels visibilityZoomLevels { get; set; } = new VisibilityZoomLevels();
@@ -323,7 +337,7 @@
 <p><a href="https://github.com/ichim/MapsForBlazor-nuget/tree/main/StreamPoint%20Collection/Appearance/PieChart">More about PieChart</a></p>
 <ul>
 <li>
-<p><strong>GaugeChart</strong> -&gt; is a class with which you can use gauge charts to display the point on the map. The GaugeChart class defines a set of gauge chart elements that are scalable with the zoom level and are only displayed in the current view.</p>
+<p><strong><a href="https://github.com/ichim/MapsForBlazor-nuget/tree/main/StreamPoint%20Collection/Appearance/GaugeCharts">GaugeChart</a></strong> -&gt; is a class with which you can use gauge charts to display the point on the map. The GaugeChart class defines a set of gauge chart elements that are scalable with the zoom level and are only displayed in the current view.</p>
 <pre><code>  public class GaugeChart : IGaugeChart
         {
             public string title { get; set; } = "without title";
@@ -346,9 +360,10 @@
             public bool turnedAround { get; set; } = false;
         }
 </code></pre>
+<p><a href="https://github.com/ichim/MapsForBlazor-nuget/tree/main/StreamPoint%20Collection/Appearance/GaugeCharts">More about GaugeChart</a></p>
 </li>
 <li>
-<p><strong>DiscreteGaugeChart</strong> -&gt; is a class with which you can use gauge charts to display the point on the map. The DiscreteGaugeChart class defines a set of gauge chart elements that are scalable with the zoom level and are only displayed in the current view.</p>
+<p><strong><a href="https://github.com/ichim/MapsForBlazor-nuget/tree/main/StreamPoint%20Collection/Appearance/GaugeCharts/DiscreteGaugeChart">DiscreteGaugeChart</a></strong> -&gt; is a class with which you can use gauge charts to display the point on the map. The DiscreteGaugeChart class defines a set of gauge chart elements that are scalable with the zoom level and are only displayed in the current view.</p>
 <pre><code>      public class DiscreteGaugeChart :  IDiscreteGauge
       {
         public int dimension { get; set; } = 28;
@@ -365,6 +380,9 @@
       }
 </code></pre>
 </li>
+</ul>
+<p><a href="https://github.com/ichim/MapsForBlazor-nuget/tree/main/StreamPoint%20Collection/Appearance/GaugeCharts/DiscreteGaugeChart">More about DiscreteGaugeChart</a></p>
+<ul>
 <li>
 <p><strong>QuarterGaugeFillChart</strong> -&gt; is a class with which you can use gauge charts to display the point on the map. The QuarterGaugeFillChart class defines a set of gauge chart elements that are scalable with the zoom level and are only displayed in the current view.</p>
 <p>public class QuarterGaugeFillChart : IQuarterGaugeFill
@@ -388,7 +406,7 @@
 </code></pre>
 </li>
 </ul>
-<p>❗ Limitations of DynamicPointSVG, PieChart and GaugeChart:
+<p>❗ Limitations of DynamicPointSVG, PieChart, GaugeChart and QuarterGaugeFillChart:
  When using <code>@using static MapsForBlazor.techs.maps.Leaflet</code> it will not be displayed in Layers List control.</p>
 <ol>
 <li><strong>SetPopup()</strong></li>
@@ -530,5 +548,5 @@
 
 <!--
 MkDocs version : 1.6.1
-Build Date UTC : 2026-07-14 11:45:58.499350+00:00
+Build Date UTC : 2026-07-16 13:30:38.297111+00:00
 -->

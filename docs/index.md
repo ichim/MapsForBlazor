@@ -3,9 +3,9 @@
 
 **KEYWORDS**: Minimizing Invoke callers to JavaScript, `No JavaScript specific settings`, no script references, no css links. `One code`, one component `many technologies`.
 
-| Examples | Sample Image |
+| New Examples | Sample Image |
 |----|----|
-| SigmaDrone | ![SigmaDrone](https://raw.githubusercontent.com/ichim/MapsForBlazor-nuget/main/images/quick/SigmaDrone-border.gif) |
+| SigmaDrone [code examples](https://github.com/ichim/MapsForBlazor-nuget/tree/main/Drones) | ![SigmaDrone](https://raw.githubusercontent.com/ichim/MapsForBlazor-nuget/main/images/dashboard/SigmaDrone-Explore.gif) |
 
 # Core Concepts
 
