@@ -1,3 +1,11 @@
+
+
+<div class="md-hero" style="background-image: url('assets/banner.png'); background-size: cover; background-position: center; min-height: 320px; display: flex; align-items: center; justify-content: center;">
+  <div style="text-align: center; color: white; text-shadow: 0 2px 4px rgba(0,0,0,0.6);">
+    <h1 style="font-size: 3rem; margin: 0;">MapsForBlazor</h1>
+    <p style="font-size: 1.3rem; margin-top: 10px;">Interactive Maps</p>
+  </div>
+</div>
 *Maps for Blazor* is a library that provides components for displaying maps in Blazor applications. It supports various map providers (currently Esri and Leaflet) and allows developers to easily integrate interactive maps, `without any JavaScript settings`, into their Blazor projects. `One code, one blazor component and many technologies`.
 
 
