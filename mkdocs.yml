@@ -9,8 +9,15 @@ theme:
   features:
     - navigation.sections
     - navigation.expand
-    # Șterge liniile de mai jos:
-    # - toc.integrate
-    # - toc.follow
-  palette:
-    primary: indigo
+
+plugins:
+  - search
+
+nav:
+  - Acasă: index.md
+#  - Quick Start: quick-start.md
+  - SigmaDrone Explorer: Drone.md
+#  - Load Parameters: load-parameters.md
+#  - Points on the Map: points.md
+#  - Appearance: appearance.md
+#  - Examples: examples.md
