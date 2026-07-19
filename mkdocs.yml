@@ -14,9 +14,9 @@ plugins:
   - search
 
 nav:
-  - Acasă: index.md
+  - Home: index.md
 #  - Quick Start: quick-start.md
-  - SigmaDrone Explorer: Drone.md
+  - Drone Dashboard: Drone.md
 #  - Load Parameters: load-parameters.md
 #  - Points on the Map: points.md
 #  - Appearance: appearance.md
