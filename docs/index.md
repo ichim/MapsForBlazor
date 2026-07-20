@@ -1,19 +1,54 @@
 
 
-<div class="md-hero" style="background-image: url('assets/banner.png'); background-size: cover; background-position: center; min-height: 320px; display: flex; align-items: center; justify-content: center;">
-  <div style="text-align: center; color: white; text-shadow: 0 2px 4px rgba(0,0,0,0.6);">
-    <h1 style="font-size: 3rem; margin: 0;">MapsForBlazor</h1>
-    <p style="font-size: 1.3rem; margin-top: 10px;">Interactive Maps</p>
+<div class="md-hero"  style="background-image: url('assets/banner.png'); 
+            background-size: cover; 
+            background-position: center; 
+            min-height: 320px; 
+            display: flex; 
+            align-items: flex-start;           /* ← schimbat din center */
+            justify-content: center; 
+            padding-top: 78px;                 /* ← ajustează această valoare */
+            position: relative;">
+  
+  <!-- Text central -->
+   <div style="text-align: center; color: white; text-shadow: 0 2px 4px rgba(0,0,0,0.6);">
+    <h1 style="font-size: 2.8rem; margin: 0;">MapsForBlazor</h1>
+   
   </div>
+
+  <!-- Link-uri GitHub și NuGet -->
+<div style="position: absolute; bottom: 10px; left: 10px; display: flex; gap: 12px;">
+  
+  <a href="https://github.com/ichim/MapsForBlazor-nuget" target="_blank" 
+     style="color: #3C2F2F; text-decoration: none; font-size: 0.9rem; 
+            background-color: rgba(255,255,255,0.28); 
+            padding: 7px 16px; border-radius: 6px; 
+            display: flex; align-items: center; gap: 6px;
+            transition: all 0.2s ease;"
+     onmouseover="this.style.backgroundColor='rgba(255,255,255,0.48)'"
+     onmouseout="this.style.backgroundColor='rgba(255,255,255,0.28)'">
+    GitHub
+  </a>
+
+  <a href="https://www.nuget.org/packages/MapsForBlazor" target="_blank" 
+     style="color: #3C2F2F; text-decoration: none; font-size: 0.9rem; 
+            background-color: rgba(255,255,255,0.28); 
+            padding: 7px 16px; border-radius: 6px; 
+            display: flex; align-items: center; gap: 6px;
+            transition: all 0.2s ease;"
+     onmouseover="this.style.backgroundColor='rgba(255,255,255,0.48)'"
+     onmouseout="this.style.backgroundColor='rgba(255,255,255,0.28)'">
+    NuGet
+  </a>
+
+</div>
+
 </div>
 *Maps for Blazor* is a library that provides components for displaying maps in Blazor applications. It supports various map providers (currently Esri and Leaflet) and allows developers to easily integrate interactive maps, `without any JavaScript settings`, into their Blazor projects. `One code, one blazor component and many technologies`.
 
 
 **KEYWORDS**: Minimizing Invoke callers to JavaScript, `No JavaScript specific settings`, no script references, no css links. `One code`, one component `many technologies`.
 
-[GitHub repository](https://github.com/ichim/MapsForBlazor-nuget)
-
-[NuGet package](https://www.nuget.org/packages/MapsForBlazor)
 
 | New Examples | Sample Image |
 |----|----|
