@@ -16,7 +16,8 @@ plugins:
 nav:
   - Home: index.md
   - StreamPoint collection: StreamPoint.md
-  - Drone Dashboard: Drone.md
+  - Dashboard:
+       - SigmaDrone: Drone.md
 #  - Load Parameters: load-parameters.md
 #  - Points on the Map: points.md
 #  - Appearance: appearance.md
