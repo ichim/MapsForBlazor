@@ -15,7 +15,7 @@ plugins:
 
 nav:
   - Home: index.md
-#  - Quick Start: quick-start.md
+  - StreamPoint collection: StreamPoint.md
   - Drone Dashboard: Drone.md
 #  - Load Parameters: load-parameters.md
 #  - Points on the Map: points.md
