@@ -15,7 +15,7 @@ plugins:
 
 nav:
   - Home: index.md
-  - Quick start: StreamPoint.md
+  - Quick start: QuickStart.md
   - StreamPoint collection: StreamPoint.md
   - Dashboard:
        - SigmaDrone: Drone.md
