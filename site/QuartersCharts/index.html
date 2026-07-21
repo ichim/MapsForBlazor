@@ -9,10 +9,8 @@
       
       
       
-        <link rel="prev" href="../Appearance/">
+        <link rel="prev" href="../Drone/">
       
-      
-        <link rel="next" href="../PieChart/">
       
       
       <link rel="icon" href="../assets/CAL.png">
@@ -20,7 +18,7 @@
     
     
       
-        <title>StreamPoint collection - MapsForBlazor</title>
+        <title>QuartersCharts - MapsForBlazor</title>
       
     
     
@@ -72,7 +70,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#working-with-streampoint-collection" class="md-skip">
+        <a href="#quarter-charts" class="md-skip">
           Sari la conținut
         </a>
       
@@ -107,7 +105,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              StreamPoint collection
+              QuartersCharts
             
           </span>
         </div>
@@ -274,30 +272,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    StreamPoint collection
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../StreamPoint/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -306,53 +284,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Cuprins">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Cuprins
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#add-remove-streampoint" class="md-nav__link">
-    <span class="md-ellipsis">
-      Add Remove StreamPoint
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#appearance" class="md-nav__link">
-    <span class="md-ellipsis">
-      Appearance
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#streampoint-collection-events" class="md-nav__link">
-    <span class="md-ellipsis">
-      StreamPoint collection events
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -361,8 +292,10 @@
       
   
   
+    
   
   
+  
     
     
     
@@ -372,13 +305,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
@@ -392,7 +323,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             Dashboard
@@ -445,10 +376,19 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../QuartersCharts/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -457,6 +397,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -489,41 +430,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Cuprins
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#add-remove-streampoint" class="md-nav__link">
-    <span class="md-ellipsis">
-      Add Remove StreamPoint
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#appearance" class="md-nav__link">
-    <span class="md-ellipsis">
-      Appearance
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#streampoint-collection-events" class="md-nav__link">
-    <span class="md-ellipsis">
-      StreamPoint collection events
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -537,22 +443,10 @@
                   
 
 
-<h1 id="working-with-streampoint-collection">Working with StreamPoint collection</h1>
-<p>All code examples in this section are identical and can implement either ArcGIS technology or Leaflet technology. </p>
-<p>To use ArcGIS:</p>
-<pre><code>@using static MapsForBlazor.techs.maps.ArcGIS
-</code></pre>
-<p>To use Leaflet:</p>
-<pre><code>@using static MapsForBlazor.techs.maps.Leaflet
-</code></pre>
-<h2 id="add-remove-streampoint">Add Remove StreamPoint</h2>
-<p><a href="https://github.com/ichim/MapsForBlazor-nuget/blob/main/StreamPoint%20Collection/Add%20Remove">more about Add and Remove methods</a></p>
-<h2 id="appearance">Appearance</h2>
-<p>Appearance() is a method of the point collection (StreamPoint), which allows you to customize the display of points on the map.</p>
-<p><a href="https://github.com/ichim/MapsForBlazor-nuget/tree/main/StreamPoint%20Collection/Appearance">more about Appearance</a></p>
-<h2 id="streampoint-collection-events">StreamPoint collection events</h2>
-<p>The StreamPoint collection of points (map.Geometric.Points) provides the event: OnClick</p>
-<p><a href="https://github.com/ichim/MapsForBlazor-nuget/tree/main/StreamPoint%20Collection/Identify%20on%20click">more about events</a></p>
+<h1 id="quarter-charts">Quarter Charts</h1>
+<p>It represents a set of 1 to 4 Gause graphs that can be used for various purposes. One of the areas of use can be fleet monitoring.
+These Gauge charts, hosted by a quarter circle, are configurable and can operate via dynamic parameters.</p>
+<p><img width="988" height="789" alt="image" src="https://github.com/user-attachments/assets/bf8c5450-f20d-42d2-9e1c-434ddd25997d" /></p>
 
 
 
