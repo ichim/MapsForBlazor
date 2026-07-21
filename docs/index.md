@@ -44,10 +44,30 @@
 </div>
 
 <div style="position: absolute; bottom: 10px; right: 10px; display: flex; gap: 12px;">
+<a href="https://github.com/ichim/MapsForBlazor-nuget" target="_blank">
+    <img src="https://img.shields.io/github/languages/top/ichim/MapsForBlazor-nuget" alt="GitHub top language">
+  </a>
   <a href="https://www.nuget.org/packages/MapsForBlazor" target="_blank">
     <img src="https://img.shields.io/nuget/v/MapsForBlazor" alt="NuGet Version">
   </a>
 </div>
+<!--
+<div style="margin-top: 15px; display: flex; gap: 8px; flex-wrap: wrap;">
+  
+  <a href="https://www.nuget.org/packages/MapsForBlazor" target="_blank">
+    <img src="https://img.shields.io/nuget/v/MapsForBlazor" alt="NuGet Version">
+  </a>
+
+  <a href="https://github.com/ichim/MapsForBlazor-nuget" target="_blank">
+    <img src="https://img.shields.io/github/languages/top/ichim/MapsForBlazor-nuget" alt="GitHub top language">
+  </a>
+
+  <a href="https://github.com/ichim/MapsForBlazor-nuget/stargazers" target="_blank">
+    <img src="https://img.shields.io/github/stars/ichim/MapsForBlazor-nuget" alt="GitHub stars">
+  </a>
+
+</div>
+--!>
 
 </div>
 
