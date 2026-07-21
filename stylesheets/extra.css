@@ -1,0 +1,9 @@
+/* Pentru tema standard MkDocs sau ReadTheDocs */
+body {
+    background-color: #f0f2f5; /* Înlocuiește cu codul culorii dorite */
+}
+
+/* Dacă folosești tema Material for MkDocs, se folosesc variabile CSS */
+:root {
+  --md-default-bg-color: #f0f2f5;
+}
