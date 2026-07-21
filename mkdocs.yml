@@ -5,6 +5,13 @@ theme:
   language: ro
   logo: assets/CAL.png
   favicon: assets/CAL.png
+  palette:
+    - scheme: default # Modul luminos
+      primary: indigo
+      accent: indigo
+    - scheme: slate   # Modul întunecat (background închis)
+      primary: indigo
+      accent: indigo
 
   features:
     - navigation.sections
@@ -16,8 +23,10 @@ plugins:
 nav:
   - Home: index.md
   - Quick start: QuickStart.md
+  - Appearance: Appearance.md
   - StreamPoint collection: StreamPoint.md
   - Dashboard:
+       - PieChart: PieChart.md
        - SigmaDrone: Drone.md
 #  - Load Parameters: load-parameters.md
 #  - Points on the Map: points.md
