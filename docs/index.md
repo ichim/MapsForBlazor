@@ -43,7 +43,16 @@
 
 </div>
 
+<div style="position: absolute; bottom: 10px; right: 10px; display: flex; gap: 12px;">
+  <a href="https://www.nuget.org/packages/MapsForBlazor" target="_blank">
+    <img src="https://img.shields.io/nuget/v/MapsForBlazor" alt="NuGet Version">
+  </a>
 </div>
+
+</div>
+
+
+
 *Maps for Blazor* is a library that provides components for displaying maps in Blazor applications. It supports various map providers (currently Esri and Leaflet) and allows developers to easily integrate interactive maps, `without any JavaScript settings`, into their Blazor projects. `One code, one blazor component and many technologies`.
 
 

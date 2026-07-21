@@ -9,8 +9,10 @@
       
       
       
-        <link rel="prev" href="../PieChart/">
+        <link rel="prev" href="../QuickStart/">
       
+      
+        <link rel="next" href="../StreamPoint/">
       
       
       <link rel="icon" href="../assets/CAL.png">
@@ -18,7 +20,7 @@
     
     
       
-        <title>SigmaDrone - MapsForBlazor</title>
+        <title>Appearance - MapsForBlazor</title>
       
     
     
@@ -70,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#drone-dashboard" class="md-skip">
+        <a href="#working-with-appearance" class="md-skip">
           Sari la conținut
         </a>
       
@@ -105,7 +107,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              SigmaDrone
+              Appearance
             
           </span>
         </div>
@@ -252,10 +254,30 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../Appearance/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Appearance
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -264,6 +286,35 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Cuprins">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Cuprins
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#setstyle-method" class="md-nav__link">
+    <span class="md-ellipsis">
+      SetStyle() method
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -292,8 +343,6 @@
       
   
   
-    
-  
   
   
     
@@ -305,11 +354,13 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
         
           
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
@@ -323,7 +374,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             Dashboard
@@ -355,30 +406,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    SigmaDrone
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../Drone/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -387,77 +418,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Cuprins">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Cuprins
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#indicators-on-the-center-panel" class="md-nav__link">
-    <span class="md-ellipsis">
-      Indicators on the center panel
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#crown-indicators" class="md-nav__link">
-    <span class="md-ellipsis">
-      Crown indicators
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Crown indicators">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#sigmadronecrowndiscrete-class" class="md-nav__link">
-    <span class="md-ellipsis">
-      SigmaDroneCrownDiscrete class
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#sigmadronecrownscale-class" class="md-nav__link">
-    <span class="md-ellipsis">
-      SigmaDroneCrownScale class
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#sigmadronecrownpercent-class" class="md-nav__link">
-    <span class="md-ellipsis">
-      SigmaDroneCrownPercent class
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -497,53 +457,11 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#indicators-on-the-center-panel" class="md-nav__link">
+  <a href="#setstyle-method" class="md-nav__link">
     <span class="md-ellipsis">
-      Indicators on the center panel
+      SetStyle() method
     </span>
   </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#crown-indicators" class="md-nav__link">
-    <span class="md-ellipsis">
-      Crown indicators
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Crown indicators">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#sigmadronecrowndiscrete-class" class="md-nav__link">
-    <span class="md-ellipsis">
-      SigmaDroneCrownDiscrete class
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#sigmadronecrownscale-class" class="md-nav__link">
-    <span class="md-ellipsis">
-      SigmaDroneCrownScale class
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#sigmadronecrownpercent-class" class="md-nav__link">
-    <span class="md-ellipsis">
-      SigmaDroneCrownPercent class
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -562,23 +480,24 @@
                   
 
 
-<h1 id="drone-dashboard">Drone Dashboard</h1>
-<p>SigmaDroneChart is a customizable GaugeChart.</p>
-<p>This chart allows you to add specific indicators, such as WiFi, Battery or Altimetre.</p>
-<table>
-<thead>
-<tr>
-<th></th>
-<th>Image</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Usage example</td>
-<td><img width="542" height="312" alt="image" src="https://github.com/user-attachments/assets/f2e3e876-f0e2-4bd5-886a-86a55533ab79" /></td>
-</tr>
-</tbody>
-</table>
+<h1 id="working-with-appearance">Working with Appearance</h1>
+<p>Appearance() is a method of the point collection (StreamPoint), which allows you to customize the display of points on the map. This method implements a Where (LINQ) with which you can filter the points in the collection for which you want to change the appearance:</p>
+<p>For example:</p>
+<pre><code>await map.Geometric.Points.Appearance(e =&gt; e.type == "Industrial")
+    .SetStyle(new PieChart()
+    {
+        dimension = 40,
+
+        title = "Park",
+        visibilityZoomLevels = new VisibilityZoomLevels() { minZoomLevel = 8, maxZoomLevel = 10 },
+        expandedIndex = 0,
+        fontSize = 8,
+        paramOrValues = "${production}",
+        paramOrLabels = "${texts}",
+        paramOrColors = "${classes}"
+    })
+    .SetLabel(new Label() { text = "Park 4", title = "Label Layer List" });
+</code></pre>
 <p>Chart configuration parameters can be either invariants or dynamic. Invariants are those related to the appearance or configuration of the chart content, e.g. color, height, fontSize etc.
 The parameters here are those that change over time and must be updated on the chart when the attributes of a StreamPoint are updated. 
 These parameters are denoted by <code>paramOr...</code> and can be configured with numeric, string or array values ​​or can be configured to retrieve data from the StreamPoint collection.</p>
@@ -589,192 +508,26 @@ These parameters are denoted by <code>paramOr...</code> and can be configured wi
 <pre><code>       paramOrValue = "${batteryLevel}"
 </code></pre>
 <p>Where <code>batteryLevel</code> is an attribute of a StreamPoint element in the StreamPoint collection.</p>
-<h2 id="indicators-on-the-center-panel">Indicators on the center panel</h2>
-<p>WiFi:</p>
-<table>
-<thead>
-<tr>
-<th></th>
-<th>Image</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>WiFiIndicator</td>
-<td><img width="547" height="272" alt="image" src="https://github.com/user-attachments/assets/fd565bbe-1ec2-42a3-a364-976019e6ff9a" /></td>
-</tr>
-</tbody>
-</table>
-<pre><code>       wifiIndicator = new WiFiIndicator()
-       {
-           paramOrLevel = "${wifiLevel}",                                 //0 to 3
-           size = 10
-       },
-</code></pre>
-<p>Battery:</p>
-<table>
-<thead>
-<tr>
-<th></th>
-<th>Image</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>BatteryIndicator</td>
-<td><img width="549" height="272" alt="image" src="https://github.com/user-attachments/assets/de2878c7-ce53-40d3-aca0-57808848cc7a" /></td>
-</tr>
-</tbody>
-</table>
-<pre><code>        batteryIndicator = new BatteryIndicator()
-        {
-            paramOrLevel = "${battery}"                                 //0 to 10
-        },
-</code></pre>
-<p>Altimeter:</p>
-<table>
-<thead>
-<tr>
-<th></th>
-<th>Image</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>AltitudeIndicator</td>
-<td><img width="545" height="275" alt="image" src="https://github.com/user-attachments/assets/5af6cf3c-90db-4701-b91f-88b9e4dc485c" /></td>
-</tr>
-</tbody>
-</table>
-<pre><code>        altitudeIndicator = new AltitudeIndicator()
-        {
-            paramOrAltitude = "${altitude}",
-            maximumAltitude = 300,
-        },
-</code></pre>
-<h2 id="crown-indicators">Crown indicators</h2>
-<p>These are indicators hosted by the circular crown of the Gauge chart. An unlimited number of Crown Indicators can be configured.</p>
-<pre><code>         public IEnumerable&lt;SigmaDroneObject&gt; crownIndicators { get; set; }
-</code></pre>
-<ol>
-<li>
-<p>SigmaDroneCrownScale</p>
-<pre><code>public class SigmaDroneCrownScale : SigmaDroneObject
-{
-    public string label { get; set; }
-    public double valueStart { get; set; }
-    public double valueStop { get; set; }
-    public object paramOrValue { get; set; }
-}
-</code></pre>
-</li>
-<li>
-<p>SigmaDroneCrownDiscrete</p>
-<pre><code>public class SigmaDroneCrownDiscrete : SigmaDroneObject
-{
-    public string label { get; set; }
-    public int[]? percentageValues { get; set; }
-    public string[]? colors { get; set; }
-    public string[]? labels { get; set; }
-    public object? paramOrIndex { get; set; }
-    public bool haloText { get; set; }
-}
-</code></pre>
-</li>
-<li>
-<p>SigmaDroneCrownPercent</p>
-<pre><code>public class SigmaDroneCrownPercent : SigmaDroneObject
-{
-    public string label { get; set; }
-    public int valueStart { get; set; }
-    public int valueStop { get; set; }
-    public object? paramOrValue { get; set; }
-    public string backgroundColor { get; set; } = "white";
-    public string fillColor { get; set; } = "red";
-    public bool haloText { get; set; }
-}
-</code></pre>
-</li>
-</ol>
-<h3 id="sigmadronecrowndiscrete-class">SigmaDroneCrownDiscrete class</h3>
-<table>
-<thead>
-<tr>
-<th></th>
-<th>Image</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>SigmaDroneCrownDiscrete class</td>
-<td><img width="555" height="267" alt="image" src="https://github.com/user-attachments/assets/d24a2fea-2aa3-43fc-99ff-1d91fd805a1c" /></td>
-</tr>
-</tbody>
-</table>
-<pre><code>         new SigmaDroneCrownDiscrete()
-         {
-             label  = "Fuel",
-             colors = new List&lt;string&gt;() { "red", "orange", "yellow", "green" }.ToArray(),
-             percentageValues = new List&lt;int&gt;() { 33, 33, 33, 33 }.ToArray(),
-             paramOrIndex = "${fuel}",
-             labels = new List&lt;string&gt;() { "critical", "low", "range", "full" }.ToArray(),
-             percentageOfTheEntireCrown = 100,
-             backgroundColor = "lightgray",
-             haloText = true,
-         },
-</code></pre>
-<h3 id="sigmadronecrownscale-class">SigmaDroneCrownScale class</h3>
-<table>
-<thead>
-<tr>
-<th></th>
-<th>Image</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>SigmaDroneCrownScale</td>
-<td><img width="566" height="299" alt="image" src="https://github.com/user-attachments/assets/c0892336-7ecd-4be0-bacf-ab1b72b3eeef" /></td>
-</tr>
-</tbody>
-</table>
-<pre><code>        new SigmaDroneCrownScale()
-        {
-            label = "x 1 km/h",
-            valueStart = 0,
-            valueStop = 120,
-            paramOrValue = "${speed}",
-            percentageOfTheEntireCrown = 100,
-            backgroundColor = "#f8f8ff"
-        },
-</code></pre>
-<h3 id="sigmadronecrownpercent-class">SigmaDroneCrownPercent class</h3>
-<table>
-<thead>
-<tr>
-<th></th>
-<th>Image</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>SigmaDroneCrownPercent</td>
-<td><img width="546" height="272" alt="image" src="https://github.com/user-attachments/assets/5a77a9ed-6729-4c77-9143-e3b4f9d6b4a1" /></td>
-</tr>
-</tbody>
-</table>
-<pre><code>          new SigmaDroneCrownPercent()
-         {
-             label = "fuel",
-             valueStart = 0,
-             valueStop = 10,
-             paramOrValue = 3,
-             percentageOfTheEntireCrown = 100,
-             backgroundColor = "lime",
-             fillColor = "orange",
-             haloText = true
-         },
-</code></pre>
+<p>Customizing the appearance displayed on the map is done using the following methods:</p>
+<ul>
+<li><a href="https://github.com/ichim/MapsForBlazor-nuget/tree/main/StreamPoint%20Collection/Appearance/SetStyle">SetStyle</a> - the appearance of the point on the map</li>
+<li>SetLabel - a text can be associated</li>
+<li>SetPopup - a popup can be associated</li>
+</ul>
+<h2 id="setstyle-method">SetStyle() method</h2>
+<p>The SetStyle() method allows the use of several predefined classes with which you can change the appearance of points on the map.
+The classes that allow customizing the appearance of the point on the map are:</p>
+<ul>
+<li>PointStyle</li>
+<li>DynamicPointSVG</li>
+<li>PieChart</li>
+<li>GaugeChart</li>
+<li>DiscreteGaugeChart</li>
+<li>QuarterGaugeFillChart and QuarterGaugeFillChartBase</li>
+<li>QuarterGaugeScaleAndPercentChart and QuarterGaugeScaleAndPercentChartBase</li>
+<li>QuartersCharts</li>
+<li>SigmaDroneChart</li>
+</ul>
 
 
 

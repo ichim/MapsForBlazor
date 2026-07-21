@@ -19,7 +19,6 @@ theme:
 
 plugins:
   - search
-
 nav:
   - Home: index.md
   - Quick start: QuickStart.md
