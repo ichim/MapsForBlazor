@@ -27,6 +27,7 @@ nav:
   - Dashboard:
        - PieChart: PieChart.md
        - SigmaDrone: Drone.md
+       - QuartersCharts: QuartersCharts.md
 #  - Load Parameters: load-parameters.md
 #  - Points on the Map: points.md
 #  - Appearance: appearance.md
