@@ -1,4 +1,5 @@
-site_name: MapsForBlazor
+site_name: MapsForBlazor 
+
 
 theme:
   name: material

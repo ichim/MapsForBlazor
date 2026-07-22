@@ -1,5 +1,3 @@
-
-
 <div class="md-hero"  style="background-image: url('assets/banner.png'); 
             background-size: cover; 
             background-position: center; 
@@ -51,6 +49,9 @@
     <img src="https://img.shields.io/nuget/v/MapsForBlazor" alt="NuGet Version">
   </a>
 </div>
+
+
+
 <!--
 <div style="margin-top: 15px; display: flex; gap: 8px; flex-wrap: wrap;">
   
@@ -454,5 +455,6 @@ The SetLabel() method provides the ability to add text to the map. The text will
 
 |ᶜ⁴ˡᵘ⁷ᵘ⁵ᵘᶠˡᵉ⁷⁸ᵘⁿ|
 |----|
+| ![Hits](https://hits.sh/github.com/ichim/MapsForBlazor-nuget.svg) |
 
-Laurentiu Ichim, Bucharest
+Laurentiu Ichim, Bucharest 
