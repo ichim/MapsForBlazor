@@ -9,10 +9,29 @@
             position: relative;">
   
   <!-- Text central -->
-   <div style="text-align: center; color: white; text-shadow: 0 4px 6px rgba(100,200,255,.8);">
-    <h1 style="font-size: 2.4rem; margin: 0; color: #B6D6FC">MapsForBlazor</h1>
-   
-  </div>
+ <!--
+ <div style="text-align: center;">
+    <h1 style="
+        font-size: 2.4rem; 
+        margin: 0; 
+        color: navy;
+        text-shadow: 
+            0 1px 0 white,
+            0 2px 0 white,
+            0 3px 0 white,
+            0 4px 0 white,
+            0 5px 0 white,
+            0 6px 1px rgba(0, 0, 0, 0.1),
+            0 0 5px rgba(0, 51, 102, 0.4),
+            0 1px 3px rgba(0, 51, 102, 0.6),
+            0 3px 5px rgba(0, 51, 102, 0.8),
+            0 5px 10px rgba(0, 51, 102, 0.9);
+        transform: perspective(400px) rotateX(20deg);
+        transform-origin: 50% 100%;
+    ">MapsForBlazor</h1>
+</div>
+-->
+
 
   <!-- Link-uri GitHub și NuGet -->
 <div style="position: absolute; bottom: 10px; left: 10px; display: flex; gap: 12px;">
