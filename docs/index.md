@@ -61,6 +61,9 @@
 </div>
 
 <div style="position: absolute; bottom: 10px; right: 10px; display: flex; gap: 12px;">
+<a href="https://github.com/ichim/MapsForBlazor-nuget/blob/main/LICENSE" target="_blank">
+  <img src="https://img.shields.io/github/license/ichim/MapsForBlazor-nuget?color=success" alt="License">
+</a>
 <a href="https://github.com/ichim/MapsForBlazor-nuget" target="_blank">
     <img src="https://img.shields.io/github/languages/top/ichim/MapsForBlazor-nuget" alt="GitHub top language">
   </a>
