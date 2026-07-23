@@ -443,6 +443,80 @@
                   
 
 
+<div class="md-hero"  style="background-image: url('assets/banner2.png'); 
+            background-size: cover; 
+            background-position: center; 
+            min-height: 380px; 
+            display: flex; 
+            align-items: flex-start;           /* ← schimbat din center */
+            justify-content: center; 
+            padding-top: 98px;                 /* ← ajustează această valoare */
+            position: relative;">
+
+  <!-- Text central -->
+   <div style="text-align: center; color: white; text-shadow: 0 4px 6px rgba(100,200,255,.8);">
+    <h1 style="font-size: 2.4rem; margin: 0; color: #B6D6FC">MapsForBlazor</h1>
+
+  </div>
+
+  <!-- Link-uri GitHub și NuGet -->
+<div style="position: absolute; bottom: 10px; left: 10px; display: flex; gap: 12px;">
+
+  <a href="https://github.com/ichim/MapsForBlazor-nuget" target="_blank" 
+     style="color: #3C2F2F; text-decoration: none; font-size: 0.9rem; 
+            background-color: rgba(255,255,255,0.48); 
+            padding: 7px 16px; border-radius: 6px; 
+            display: flex; align-items: center; gap: 6px;
+            transition: all 0.2s ease;"
+     onmouseover="this.style.backgroundColor='rgba(255,255,255,0.80)'"
+     onmouseout="this.style.backgroundColor='rgba(255,255,255,0.48)'">
+    GitHub
+  </a>
+
+  <a href="https://www.nuget.org/packages/MapsForBlazor" target="_blank" 
+     style="color: #3C2F2F; text-decoration: none; font-size: 0.9rem; 
+            background-color: rgba(255,255,255,0.48); 
+            padding: 7px 16px; border-radius: 6px; 
+            display: flex; align-items: center; gap: 6px;
+            transition: all 0.2s ease;"
+     onmouseover="this.style.backgroundColor='rgba(255,255,255,0.80)'"
+     onmouseout="this.style.backgroundColor='rgba(255,255,255,0.48)'">
+    NuGet
+  </a>
+
+</div>
+
+<div style="position: absolute; bottom: 10px; right: 10px; display: flex; gap: 12px;">
+<a href="https://github.com/ichim/MapsForBlazor-nuget" target="_blank">
+    <img src="https://img.shields.io/github/languages/top/ichim/MapsForBlazor-nuget" alt="GitHub top language">
+  </a>
+  <a href="https://www.nuget.org/packages/MapsForBlazor" target="_blank">
+    <img src="https://img.shields.io/nuget/v/MapsForBlazor" alt="NuGet Version">
+  </a>
+</div>
+
+
+
+<!--
+<div style="margin-top: 15px; display: flex; gap: 8px; flex-wrap: wrap;">
+
+  <a href="https://www.nuget.org/packages/MapsForBlazor" target="_blank">
+    <img src="https://img.shields.io/nuget/v/MapsForBlazor" alt="NuGet Version">
+  </a>
+
+  <a href="https://github.com/ichim/MapsForBlazor-nuget" target="_blank">
+    <img src="https://img.shields.io/github/languages/top/ichim/MapsForBlazor-nuget" alt="GitHub top language">
+  </a>
+
+  <a href="https://github.com/ichim/MapsForBlazor-nuget/stargazers" target="_blank">
+    <img src="https://img.shields.io/github/stars/ichim/MapsForBlazor-nuget" alt="GitHub stars">
+  </a>
+
+</div>
+-->
+
+</div>
+
 <p><em>Maps for Blazor</em> is a library that provides components for displaying maps in Blazor applications. It supports various map providers (currently Esri and Leaflet) and allows developers to easily integrate interactive maps, <code>without any JavaScript settings</code>, into their Blazor projects. <code>One code, one blazor component and many technologies</code>.</p>
 <p><strong>KEYWORDS</strong>: Minimizing Invoke callers to JavaScript, <code>No JavaScript specific settings</code>, no script references, no css links. <code>One code</code>, one component <code>many technologies</code>.</p>
 <table>

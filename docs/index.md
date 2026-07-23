@@ -16,7 +16,7 @@
 
   <!-- Link-uri GitHub și NuGet -->
 <div style="position: absolute; bottom: 10px; left: 10px; display: flex; gap: 12px;">
-  
+  <!--
   <a href="https://github.com/ichim/MapsForBlazor-nuget" target="_blank" 
      style="color: #3C2F2F; text-decoration: none; font-size: 0.9rem; 
             background-color: rgba(255,255,255,0.48); 
@@ -38,7 +38,7 @@
      onmouseout="this.style.backgroundColor='rgba(255,255,255,0.48)'">
     NuGet
   </a>
-
+--!>
 </div>
 
 <div style="position: absolute; bottom: 10px; right: 10px; display: flex; gap: 12px;">
